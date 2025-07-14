@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <style>
+  
+html body {
+    font-family: raleway;
+  }
+    /* Make sure the map takes the full height and width of the parent container */
+    .map {
+      height: 400px;  /* Set a fixed height or use 100vh for full screen */
+       width: 100%;    
+    margin-top: 40rem;
+    }
+    
+ .card-1 h2{
+    margin:0px;
+    border-radius:25px;
+    width:12rem;
+}
+
+.time{
+    font-size:10px;
+    margin-left:2rem;
+}
+
+.card-1 h2 , .time {
+    display:inline;
+}
+
+.book{
+    width:220px;
+}
+.image-1 {
+    width: 604px;
+}
+ .card{
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 4px 8px rgb(27 25 25 / 33%);
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 50px;
+    border: 1px solid ;
+    margin: 36px;
+    padding: 60px;
+   
+}
+
+.get-started-button {
+      font-size:2rem;
+}
+.details {
+    display: -webkit-box;
+}
+.span-5{
+    margin-left: -170px;
+    font-size: 11px;
+}
+.details h5 {
+    height: 15px;
+    width: 166px;
+    margin: 2px;
+    padding: 5px 5px 0px 5px;
+}
+.span-5{
+    margin-left: -170px;
+    font-size: 11px;
+}
+
+@media screen and (min-width: 350px) and (max-width:750px){
+    
+    
+html body{
+        padding: 0px;
+        margin: 0px;
+    } 
+    
+    .details h5 {
+        margin:0px;
+    }
+        .card-1 {
+        margin-left: 31px;
+        margin-top: 20px;
+    }
+    .card {
+        margin-right:0px;
+        margin-left: -7px;
+        width: 20rem;
+        padding: 0px;
+    }
+    
+    .main{
+        padding: 10px 0px 0px 35px;
+    }
+    
+    .map{
+        margin-left: -14px;
+    }
+    .image-1{
+    width: 329px;
+}
+    
+    .image-2{
+            padding: 2px;
+        /*width: 22.5rem;*/
+        width:100%;
+        margin-top: 36rem;
+        margin-left: -21px;
+}
+
+.second-image-2{
+    /*  margin-top: 12rem;*/
+    /*margin-left: -41rem;*/
+    /*width: 329px;*/
+    display:none;
+
+}
+
+
+
+.get-started-button {
+    margin-top: 10px;
+    font-size:13px;
+    
+}
+    
+    .first-content{
+    position: absolute;
+    margin-top: 140px;
+    font-size: 1rem;
+    margin-left: 0rem;
+    z-index: 2;
+    text-align: center;
+    width: 20rem;
+    margin-top:16rem;
+    
+
+   }
+    
+    .contact-info{
+    width:16rem;
+}
+.submit-btn{
+    width:17rem;
+}
+}
+  </style>
+</head>
+<body>
+    <div class="main" style="min-width: fit-content;">
+    <!-- hero section  -->
+     <div class="first-container">
+        <div class="first-content">
+            <h1 >The only yoga <br> membership you'll ever need.  </h1>
+            <p>Practice yoga , meditation and breathwork. <br>
+            Learn Ayurveda  and yoga philosophy. Earn <br>
+           yoga teaching certificates.  </p>
+
+            <form>
+            <input type="email" placeholder="Enter your email address" class="email-input">
+            <button type="submit" class="get-started-button">GET STARTED</button>
+          </form>
+        </div>
+
+        <div class="first-image">
+            <img src="assets/img/logo-svg-1@2x.png" alt="" width="600px" class="image-1">
+        </div>
+     </div>
+     
+
+<!-- second image -->
+     <div class="2-image">
+        <img src="assets/img/mask-group@2x.png" alt="" class="image-2 ">
+     </div>
+
+<!-- online cources card  -->
+
+<div class="card">
+    <div class="all-products">Online Courses</div>
+            <br>
+
+            <div class="cards1">
+                <div class="card-1">
+                    <img class="image" src="assets/img/mask-group-1@2x.png" alt="error">
+                    <h2>Back Banding  </h2> <span class="time">24 hrs.</span><br>
+                    
+                   <span style="font-size: 70%;">practice yoga , meditation and breathwork.learn Ayurveda and yoga philosophy. </span>
+                    <br>
+                    <br>
+                    <div class="details">
+                   <img src="assets/img/mask-group-2@2x.png" alt="" width="35px" height="35px">
+                   <h5 class="name-1">Chetan S.Kumawat</h5> 
+                   <br>
+                    <span class="span-5"> Senior Trainer</span>
+               </div>
+
+                    <button class="book">Book </button>
+                </div>
+<!-- second  -->
+                <div class="card-1">
+                    <img class="image" src="assets/img/mask-group-3@2x.png" alt="error">
+                    <h2>Hath yog  </h2>  <span class="time">24 hrs.</span><br>
+                    
+                   <span style="font-size: 70%;">practice yoga , meditation and breathwork.learn Ayurveda and yoga philosophy. </span>
+                   <br>
+                   <br>
+                   <div class="details">
+                   <img src="assets/img/mask-group-2@2x.png" alt="" width="35px" height="35px">
+                   <h5 class="name-1">Chetan S.Kumawat</h5> 
+                   <br>
+                    <span class="span-5"> Senior Trainer</span>
+               </div>
+
+                   <button class="book">Book </button>
+                </div>
+<!-- third  -->
+                <div class="card-1">
+                    <img class="image" src="assets/img/mask-group-5@2x.png" alt="error">
+                    <h2>Meditaion  </h2>  <span class="time">24 hrs.</span><br>
+                    
+                   <span style="font-size: 70%;">practice yoga , meditation and breathwork.learn Ayurveda and yoga philosophy. </span>
+                   <br>
+                   <br>
+                   <div class="details">
+                   <img src="assets/img/mask-group-2@2x.png" alt="" width="35px" height="35px">
+                   <h5 class="name-1">Chetan S.Kumawat</h5> 
+                   <br>
+                    <span class="span-5"> Senior Trainer</span>
+               </div>
+
+                   <button class="book">Book </button>
+                </div>
+<!-- fourth  -->
+                <div class="card-1">
+                    <img class="image" src="assets/img/mask-group-7@2x.png" alt="error">
+                    <h2>Back Banding </h2>  <span class="time">24 hrs.</span><br>
+                   
+                    <span style="font-size: 70%;">practice yoga , meditation and breathwork.learn Ayurveda and yoga philosophy. </span>
+                    <br>
+                    <br>
+                    <div class="details">
+                   <img src="assets/img/mask-group-2@2x.png" alt="" width="35px" height="35px">
+                   <h5 class="name-1">Chetan S.Kumawat</h5> 
+                   <br>
+                    <span class="span-5"> Senior Trainer</span>
+               </div>
+
+                    <button class="book">Book </button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <!-- <p class="see-more"> <a href="#"> SEE MORE </p> -->
+                
+                <br>
+            
+
+
+                <!-- online classes section  -->
+
+
+    <div class="all-products">Online Classes</div>
+            <br>
+            
+
+            <div class="cards1">
+                <div class="card-1">
+                    <img class="image" src="assets/img/mask-group-1@2x.png" alt="error">
+                    <h2>Back Banding  </h2>  <span class="time">24 hrs.</span><br>
+                    
+                   <span style="font-size: 70%;">practice yoga , meditation and breathwork.learn Ayurveda and yoga philosophy. </span>
+                    <br>
+                    <br>
+                    <div class="details">
+                   <img src="assets/img/mask-group-2@2x.png" alt="" width="35px" height="35px">
+                   <h5 class="name-1">Chetan S.Kumawat</h5> 
+                   <br>
+                    <span class="span-5"> Senior Trainer</span>
+               </div>
+
+                    <button class="book">Book </button>
+                </div>
+<!-- second  -->
+                <div class="card-1">
+                    <img class="image" src="assets/img/mask-group-3@2x.png" alt="error">
+                    <h2>Hath yog  </h2>  <span class="time">24 hrs.</span><br>
+                    
+                   <span style="font-size: 70%;">practice yoga , meditation and breathwork.learn Ayurveda and yoga philosophy. </span>
+                   <br>
+                   <br>
+                   <div class="details">
+                   <img src="assets/img/mask-group-2@2x.png" alt="" width="35px" height="35px">
+                   <h5 class="name-1">Chetan S.Kumawat</h5> 
+                   <br>
+                    <span class="span-5"> Senior Trainer</span>
+               </div>
+
+                   <button class="book">Book </button>
+                </div>
+<!-- third  -->
+                <div class="card-1">
+                    <img class="image" src="assets/img/mask-group-5@2x.png" alt="error">
+                    <h2>Meditaion  </h2>  <span class="time">24 hrs.</span><br>
+                    
+                   <span style="font-size: 70%;">practice yoga , meditation and breathwork.learn Ayurveda and yoga philosophy. </span>
+                   <br>
+                   <br>
+                  <div class="details">
+                   <img src="assets/img/mask-group-2@2x.png" alt="" width="35px" height="35px">
+                   <h5 class="name-1">Chetan S.Kumawat</h5> 
+                   <br>
+                    <span class="span-5"> Senior Trainer</span>
+               </div>
+
+                   <button class="book">Book </button>
+                </div>
+<!-- fourth  -->
+                <div class="card-1">
+                    <img class="image" src="assets/img/mask-group-7@2x.png" alt="error">
+                    <h2>Back Banding </h2>  <span class="time">24 hrs.</span><br>
+                   
+                    <span style="font-size: 70%;">practice yoga , meditation and breathwork.learn Ayurveda and yoga philosophy. </span>
+                    <br>
+                    <br>
+                    <div class="details">
+                   <img src="assets/img/mask-group-2@2x.png" alt="" width="35px" height="35px">
+                   <h5 class="name-1">Chetan S.Kumawat</h5> 
+                   <br>
+                    <span class="span-5"> Senior Trainer</span>
+               </div>
+
+                    <button class="book">Book </button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <!-- <p class="see-more"> <a href="#"> SEE MORE</p> -->
+</div>
+
+
+
+<!-- now the new section -->
+<div class="second-container">
+    <div class="second-content">
+        <h1>Join Online Classes Now </h1>
+        <p>Practice yoga , meditation and breathwork. <br>
+            Learn Ayurveda  and yoga philosophy. Earn <br>
+           yoga teaching certificates.</p>
+           <form >
+            <input type="email" placeholder="Enter your email address" class="email-input">
+            <button type="submit" class="get-started-button">APPLY</button>
+          </form>
+    </div>
+    <div class="second-image-2">
+          <img src="assets/img/landing-page-i3-1@2x.png" alt="" width="600px" height="600px" >
+    </div>
+</div>
+
+ <div class="map" id="map"></div>
+
+  <!-- Link to Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    // Initialize the map
+    var map = L.map('map').setView([30.134671, 78.317510], 15);  // Coordinates and zoom level
+
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker at the specified location
+    var marker = L.marker([30.134671, 78.317510]).addTo(map);
+    marker.bindPopup("<b>Location Pin</b><br>This is your location.").openPopup();
+  </script>
+ <!-- contact us page start  -->
+
+<div class="contact-container">
+    <h1>Contact Us:</h1>
+
+    <div class="contact-form">
+        <form class="first-contact">
+            <label for="fullname" class="name-label">Full name</label><br>
+            <input type="text" placeholder="Enter your full name" class="contact-name">
+            <br>
+            <br>
+
+            <label for="email" class="email-label">Email address</label><br>
+            <input type="email" placeholder="Enter your email address" class="contact-email">
+        </form>
+
+        <form class="second-contact">
+            <label for="message" class="message-label">Your message</label><br>
+            <textarea name="" placeholder="Write your message" class="contact-textarea"></textarea>
+        </form>
+    </div>
+<br>
+    <div class="contact-footer">
+        <div class="contact-info">
+            <p>P: +91 70550 00308</p>
+            <p>E: oloyogain@gmail.com</p>
+        </div>
+        <div class="contact-sendbutton">
+            <button type="submit" class="submit-btn">SEND</button>
+        </div>
+
+    </div>
+ 
+</div>
+</div>
+</body>
+</html>

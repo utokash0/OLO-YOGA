@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="assets/css/cart-page.css">
+</head>
+<body>
+    <div class="container">
+      
+        <main class="cart">
+            <section class="cart-items">
+                <div class="cart-item">
+                    <img src="assets/img/mask-group-31@2x.png" alt="Oversized T-shirt" class="item-image">
+                    <div class="item-details">
+                        <h3>Oversized T-shirt</h3>
+                        <p>XL</p>
+                        <div class="quantity">
+                            <label>Qty.</label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <p>998 INR</p>
+                    </div>
+                    <button class="delete-btn"><img src="assets/img/trac.png" alt="" style="width: 30px;"></button>
+                    <!-- 🗑️ -->
+                </div>
+                <div class="cart-item">
+                    <img src="assets/img/mask-group1@2x.png" alt="Yoga Mat" class="item-image">
+                    <div class="item-details">
+                        <h3>Yoga Mat</h3>
+                        <p>6 mm</p>
+                        <div class="quantity">
+                            <label>Qty.</label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                        <p>998 INR</p>
+                    </div>
+                    <button class="delete-btn"><img src="assets/img/trac.png" alt="" style="width: 30px;"></button>
+                </div>
+                <div class="cart-item">
+                    <img src="assets/img/mask-group-11@2x.png" alt="Yoga Block" class="item-image">
+                    <div class="item-details">
+                        <h3>Yoga Block</h3>
+                        <p>3 x 6 x 9 in.</p>
+                        <div class="quantity">
+                            <label>Qty.</label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                        <p>998 INR</p>
+                    </div>
+                    <button class="delete-btn"><img src="assets/img/trac.png" alt="" style="width: 30px;"></button>
+                </div>
+            </section>
+            <section class="cart-summary">
+                <h2>Total</h2>
+                <p>Subtotal: <span>999 INR</span></p>
+                <p>Shipping: <span>Calculated on checkout</span></p>
+                <hr>
+                <input type="text" placeholder="Discount code">
+                <button style="background-color: #37381B;">→</button>
+                <p>Discount: <span>-50 INR</span></p>
+                <hr>
+                <p>Total: <span>949 INR</span></p>
+                <button class="checkout-btn">CHECKOUT NOW</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

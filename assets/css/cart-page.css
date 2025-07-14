@@ -1,0 +1,161 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* padding: 50px; */
+    background-color: #FFF9F3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+} 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #999;
+}
+
+.breadcrumb span {
+    margin: 0 5px;
+}
+
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.cart {
+    display: flex;
+    gap: 20px;
+}
+
+.cart-items, .cart-summary {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items {
+    flex: 3;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.item-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cart-summary {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-summary h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-summary p {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4c4c47;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    width: 100%;
+    margin-top: 20px;
+    background-color:#37381B;
+    border-radius: 20px;
+    height: 50px;
+}
+
+@media screen and (min-width:350px) and ( max-width:750px){
+    .cart{
+        width: 345px;
+        padding: 10px;
+        margin: 10px;
+        display: block;
+    }
+    .cart-summary{
+        margin: 10px;
+    }
+}
+@media screen and (min-width:750px) and ( max-width:1000px){
+    .cart{
+        width: 573px;
+        padding: 10px;
+        margin: 10px;
+        display: block;
+    }
+    .cart-summary{
+        margin: 10px;
+    }
+}
+@media screen and (min-width:1000px )and ( max-width:1050px) {
+    .cart{
+        width: 828px;
+        padding: 10px;
+        margin: 10px;
+        display: block;
+    }
+    .cart-summary{
+        margin: 10px;
+    }
+}

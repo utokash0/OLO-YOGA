@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    color: #37381B;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 80px;
+    background-color: #fff;
+    color: #37381B;
+  }
+  
+  .logo-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    color: #37381B;
+  }
+  
+  .logo-section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .quick-links {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .quick-links h2 {
+    font-size: 18px;
+    color: #37381B;
+    margin-bottom: 10px;
+  }
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links li {
+    font-size: 14px;
+    line-height: 2;
+    color: #37381B;
+  }
+  
+  .stay-connected {
+    flex: 1;
+  }
+  
+  .stay-connected h2 {
+    font-size: 18px;
+    color: #37381B;
+    margin-bottom: 10px;
+  }
+  
+  .stay-connected p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #4a4a3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #37381B;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    background-color: #4a4a3f;
+    color: #fff;
+  }
+
+
+  @media screen and (min-width: 350px) and (max-width:750px) {
+
+    .footer-container{
+        display: table;
+    }
+  }

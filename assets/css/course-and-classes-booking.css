@@ -1,0 +1,160 @@
+html body{
+    font-family: raleway;
+    background-color: #FFF9F3;
+    color: #37381B;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.image-1{
+    border-radius: 30px;
+    height: 500px;
+    width: 500px;
+    margin: 1rem 1rem 1rem 2.5rem;}
+
+
+
+.content{
+    width: 26rem;
+    margin-left: 7rem;
+    margin: 3rem 3rem 0rem 10rem;
+}
+
+.content h1{
+    font-size: 3rem;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.content h3 {
+    margin: 0px;
+}
+
+.button{
+    display: block;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    background-color: #37381B;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 25rem;
+    height: 4rem;
+    border-radius: 20px;
+}
+
+
+.old-price{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.old-price , .new-price{
+    font-size: 2rem;
+}
+
+.description , .highlights{
+    display: inline-grid;
+   
+}
+
+.second-content{
+    margin-top: 5rem;
+    border-radius: 50px;
+    border: 2px solid;
+    background-color: white;
+    padding: 2rem;
+    margin-left: 5rem;
+}
+
+.highlights{
+    margin-left: 4rem;
+    margin-right: 2rem;
+
+} 
+.description  h4 , span-1 {
+    margin: 0px;
+}
+
+.map{
+    border-radius: 50px;
+    margin-left: 2.5rem;
+    margin-top: 20px;
+    width: 67rem;
+}
+
+
+.certification{
+    text-align: center;
+    font-size: 4rem;
+        margin-left: 22rem;
+}
+
+.certificate{
+    width: 36rem;
+    margin-left: 24rem;
+}
+
+.certificate-image{
+    width: 10rem;
+}
+
+
+@media screen  and (max-width:750px) {
+
+    html body{
+        /* margin: 25px; */
+    }
+    
+    .image-1{
+        width: 360px;
+    }
+
+    .content{
+        margin-left: 0px;
+        width: 22rem;
+    }
+
+    .button{
+        width: 22rem;
+    }
+
+    .highlights{
+        margin: 0px;
+    }
+
+    .map {
+        border-radius: 27px;
+        margin-top: 20px;
+        width: 22rem;
+        height: 9rem;
+        margin-left: 0rem;
+    }
+
+    .certification {
+        margin: 37px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .certificate{
+        margin-left: 3rem;
+    }
+
+    .certificate-image{
+        width: 5rem;
+    }
+
+    .image-1{
+            margin: 1rem 1rem 1rem 0rem;
+    }
+
+    .second-content{
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
+}
